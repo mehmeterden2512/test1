@@ -34,7 +34,7 @@ public class C01_TopSorusu {
             yereVurmaSayisi++;
             yukseklik*=0.75;
 
-        }while (yukseklik>100);
+        }while (yukseklik<100);
        System.out.println( " metre yukseklikten bırakilan topun aldiği yol "+toplamYol+"\n"+
                             " yere vurma sayisi "+yereVurmaSayisi);
     }

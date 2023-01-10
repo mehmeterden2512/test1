@@ -1,0 +1,44 @@
+S1: Java’da ki access modifier lari açıklayınız?
+    C1: Default: ayni package ve class tan ulaşılabilir.
+        Public: tüm package lar ve class tan ulaşılabilir
+        Private: sadece ayni class tan ulaşılabilir.
+        Protected: sadece farklı pakette ama alt olmayan class tan ulaşılamaz. Diğer şekillerde ulaşılabilir.
+S2: Java da class i tarif ediniz?
+    C2: Class, datalarımızı barındıran içinde field variable’ları ve method’ların olduğu bizim çalışma alanımızdır.
+S3: Java da obje (Object) nedir ve nasıl oluşturulur?
+    C3: Obje, örnek değişkenlere sahip sınıfın bir örneğidir. Java'da new anahtar sözcüğü kullanılarak bir Obje oluşturulur.
+S4: OOP nesne yönelimli programlama nedir?
+    C4: Bu bir programlama modeli veya yaklaşımı, büyük ve karmaşık kodlu programlar için idealdir ve aktif olarak güncellenmesi ve sürdürülmesi gerekir. Programlar, mantık ve işlevler yerine objeler etrafında düzenlenmiştir.
+S5: Java da OOPs nin ana konsepti nelerdir?
+    C5: İnheritance, Encapsulation, Abstraction, Polymorphism.
+S6: Bunları (OOPs nin ana konseptleri) açıklayınız?
+    C6: Inheritance kalıtım-miras: Bir sınıfın başka bir sınıfın özelliklerini elde ettiği miras aldığı bir süreçtir. Encapsulation-kapsülleme: Verileri sarmalama mekanizmasıdır. Abstraction-soyutlama: Kullanıcıdan var olan detayları gizleme metodolojisidir. Polymorphism: Bir değişkenin birden çok form alma yeteneğidir
+S7: Lokal varabilesi ile insanca varabilesi arasındaki fark nedir?
+    C7: Lokal varabilesi: tipik olarak bir metot, metot veya block içinde kullanılır ve yalnızca yerel kapsamı vardır. Instance varabilesi: objesinin kendisine bağlı bir değişkendir. Bir class içinde ancak metot dışında bildirilirler.
+S8: Java da Constructors ve Methods arasındaki farklar nelerdir?
+    C8: 1. Constructors: Bir objenin durumunu başlatmak için kullanılır. Methods: Bir objenin davranışını temsil etmek için kullanılır.
+        2. Constructors: Herhangi bir dönüş türü (return type) yoktur. Methods: Bir (return type) dönüş türüne sahip olmalıdır.
+        3. Constructors: (Örtülü) İmplicitly olarak çağrılır Methods: (Açıkça) Explicitly çağrılması gerekiyor
+        4. Constructors: Class adıyla aynı isimde olmak zorundadır. Methods: Olabilir veya olmayabilir de
+S9: Java’da final keyword unu açıklayınız?
+    C9: Final Java özel bir keyword dur ve non-access modifier (erişim olmayan değiştirici) olarak kullanılır.
+S10: Final keyword un kullanımını açıklayınız?
+    C10: Final keywordunu bir variable ile kullandığımızda onun value yani değeri bir kez atandığı için değiştirilemez.
+S11: Break ve Continue yapıları arasındaki farklar nelerdir?
+    C11:
+        1. Break Switch ve Loop’larda kullanılır. Continue sadece Loop’larda kullanılır.
+        2. Break sistem çalışırken bulunduğu işlemi sonlandırır. Continue işlemi sonlandırmaz sadece sıradaki diğer seçeneğe atlar.
+S12: Java’da sonsuz döngü (Loop) nedir?
+    C12: Java’da bir işlevsellik karşılanmadığında, bir talimat dizisi tarafından sonsuz döngüye girilir.
+S13: Java'da this () ve super () anahtar kelimeler arasındaki fark nedir?
+    C13: This () aynı class in varsayılan super (çağırmak için kullanılır,
+    ancak super () onları ebeveyn / temel class tan çağırmak için kullanılır.
+S14: Java da String Pool nedir?
+    C14:Heap hafıza içinde String’lerin toplandığı havuz yani yerdir.
+        Bir Object oluşturulduğu zaman onun bu havuzda önceden olup olmadığını kontrol eder
+S15: Static metot ve non-static methodlar arasındaki farklar nelerdir?
+    C15:
+        1. Static metot: Static anahtar sözcüğü metot adından önce kullanılmalıdır.
+            Ancak non-static metot anahtar kelimesini statik kullanmaya gerek yoktur.
+        2. Static metot: Class kullanılarak çağrılır Ancak non-static methodlar genel methodlar gibi çağrılabilir.
+        3. Static metot: Statik olmayan değişkenlere (varabilesi) erişilemez Ancak non-static metot bunlara erişebilir
