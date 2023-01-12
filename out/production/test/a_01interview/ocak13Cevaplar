@@ -1,0 +1,64 @@
+A31: 1. saklama alanı; String’ler StringPool'da
+        StringBuilder Heap hafızada
+     2. İş parçacığı güvenliği; String’ler evet
+                                StringBuilder no
+     3. form; String’ler Değişmez
+                StringBuilder değiştirilebilir
+      4. Performans; String’ler Hızlı
+                    StringBuilder daha verimli, özellikle setter ve getter
+                     methodlarinda.
+C32: Hayır edilemez.
+C33: JVM in altkümesi ve class dosyalarının yüklenmesinden sorumlu yapı
+C34: Java 3 tane ClassLoader destekler
+        1. Bootstrap
+        2. Extension
+        3. System / Application
+C35: Basitçe, String objesi oluşturulduktan sonra durumunun değiştirilemeyeceği
+     anlamına gelir. Uygulamanın güvenlik önbelleğini, senkronizasyonunu ve
+     performansını artırır.
+C36:
+     1. Array, farklı veri türlerinin değerlerini içeremez.
+     ArrayList bunları içerebilir.
+     2. Array size’ı tanımlanmalıdır.
+     ArrayList size’ı dinamik olarak değiştirilebilir.
+     3. Veri eklemek için Array’in indeksi belirtmesi gerekir.
+     ArrayList buna ihtiyacı yok.
+     4. Array’ler primitive data ve nesneler (Objects) içerebilir.
+     ArrayList yalnızca objeleri içerebilir
+C37: Map, benzersiz anahtarları (keys) değerlerle (values) eşleştiren bir Util Paketi
+      ara yüzüdür.
+     Yinelenen anahtarlar (key) içermez
+     Her anahtar (key) en fazla bir değerle(value) eşlenebilir
+C38: Collection bir mimar gibi bir grup nesne objeyi depolamak ve işlemek için
+        hareket eden bir çerçeveden framework tan oluşur.
+C39:  Interface, class ve methodlar içerirler. List, queue ve set en önemli parçalarıdır
+        Collection Class’ların.
+C40: Bu soruya en iyi örnek; kamera, hesap makinesi, mp3 çalar yada uzaktan
+    kumanda gibi kullanılan bir cep telefonudur.
+Q41: Kaç çeşit Polymorphism vardır?
+C41: 2 çeşittir;
+        1- Compile time Polymorphism method overloading dir.
+        2- Run Time Polymorphism dir inheritance and interface tarafından yapılır
+C42: Temelde ayrıntıları gizlemek ve önemli olanları kullanıcıya göstermekle
+            ilgilenir. İki yol olabilir soyutlama sınıfları (Abstraction class) ve ara yüzleri (Interface)
+C43: Abstraction method ve statik sabitlerin birleşimidir. Herhangi bir Constructor’a
+        sahip değildir. Boş gövdeli birbiriyle alakalı methodlar dan oluşan bir gruptur.
+A44: 1. Abstract Class: Overridden yapılmasını sağlayabilir.
+         Interface: sadece imzada yer alır, herhangi bir kod sağlayamaz.
+        2. Abstract Class: bir class yalnızca bir soyut Abstraction class i genişletebilir (extend edebilir)
+        Interface: bir class birkaç Interface uygulayabilir
+        3. Abstract Class: soyut olmayan method sahip olabilir
+        Interface: Tüm (ara yüz) Interface methodlar (abstract tir) soyuttur
+        4. Abstract Class: örnek değişkeni (instance variable) olabilir
+        Interface: örnek değişkenlere (instance variables) sahip olamaz
+        5. Abstract Class: herkes tarafından ulaşılan görünürlüğe sahip olabilir public protected
+        private
+        Interface: sadece public olmalı ya da olmamalı
+        6. Abstract Class: Constructor içerebilir
+        Interface: Constructor içeremez
+        7. Abstract Class: hızlı
+         Interface: yavaş , gerçek class a uygun methodu bulmak için ekstra zamana
+        ihtiyacı var
+A45: Bu bir kavramdır ve kodun yeniden kullanılmasına yardımcı olur.
+     Farklı class lar arasında bir ilişki kurar.
+     İsimleri ebeveyn class ı ve alt class ıdır.
