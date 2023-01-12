@@ -32,7 +32,7 @@ public class C01_sifreSorgulama {
                   }
               }
               for (int i = 0; i < sifre.length(); i++) {
-                  if (!(sifre.charAt(sifre.indexOf(i)) >= 'A' || sifre.charAt(sifre.indexOf(i)) <= 'Z')) {
+                  if (!(sifre.charAt(i) >= 'A' || sifre.charAt(i) <= 'Z')) {
                       System.out.println("girilen sifre kuck harf icermelidir");
                       sayac++;
                   }

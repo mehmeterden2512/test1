@@ -1,0 +1,39 @@
+ITERATOR
+    Array ve ArrayList coklu element iceren yapilarda, index kullanma’dan
+    collection elementleri uzerinde GEZİNMEMİZİ ve DEGİSİKLİK YAPMAMİZİ saglar.
+   2 cesit Iteratorumuz var :
+   1. Iterator     itr1   =   sayilar.iterator();
+   2. ListIterator itr2   =   sayilar.listIterator();
+   1 >> Ilk Iterator'un 4 methodu var. ( Iterator itr1 = sayilar.iterator() )
+           itr1.next();     >> İleri yonde bir imlecten diger imlece gecer ve uzerinden gectigi sayiyi dondurur._9_3_
+           itr1.hasNext();  >> Bir ilerisinde (saginda) element var mi diye sorar, true/false dondurur.
+           itr1.remove();   >> silme islemi yapar ve islem KALICI olur
+           itr1.forEachRemaining(Consumer action); **  >> bilmiyoruz  <<
+   2 >> Ikıncı Iterator'unsa 9 methodu var. ( ListIterator itr2 = sayilar.listIterator() )
+           itr2.add(e);          >>  Belirtilen elementi listeye ekler (e'yi) , islem KALICI olur.
+           itr2.set(e);          >>  Hangi elemanin uzerinden geciyorsa o elemani gunceller, islem KALICI olur.
+           itr2.remove();        >>  Hangi elemanin uzerinden geciyorsa o elemani siler, islem KALICI olur.
+           itr2.next();          >>  İleri yonde bir imlecten diger imlece gecer ve uzerinden gectigi sayiyi dondurur.
+           itr2.previous();      >>  Geri yonde bir imlecten diger imlece gecer ve uzerinden gectigi sayiyi dondurur.
+           itr2.hasNext();       >>  Bir ilerisinde (saginda) element var mi diye sorar, true/false dondurur.
+           itr2.hasPrevious();   >>  Bir gerisinde (solunda) element var mi diye sorar, true/false dondurur.
+           itr2.nextIndex();     >> Imleci hicbir yere tasimaz, bir sonraki index numarasini verir,(Kalıcı degil)
+           itr2.previousIndex()  >> Imleci hicbir yere tasimaz, bir onceki index numarasini verir,(Kalıcı degil)
+           NOT : Iterator veya LıstIterator kullanirken dikkat etmemiz gereken
+                 EN ONEMLI KONU ;
+                 iterartor'un nerede oldugu ve nasil hareket ettirilecegidir.
+                 ** Yeni bir isleme baslayacagimizda, yeniden deger atamaliyiz
+                 **
+           NOT : Mesela soruda sondan basa yazdir derse
+                 ilk once iteratoru sona getirip geri geri yazdirabiliriz.
+                 EX:
+                 Soru 2) Bir listedeki elementleri iterator kullanarak sondan basa dogru yazdirin
+                 List<String> names = new ArrayList<>(Arrays.asList("Ayse","Fatma","Hayriye","Zehra","Elif"));
+                 ListIterator itr = names.listIterator();
+                 while (itr.hasNext()){
+                     System.out.print(itr.next() + " ");   >> Ayse Fatma Hayriye Zehra Elif
+                 }
+                 System.out.println("");
+                 while (itr.hasPrevious()){
+                     System.out.print(itr.previous()+ " ");  >>  Elif Zehra Hayriye Fatma Ayse
+                 }
