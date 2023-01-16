@@ -45,21 +45,22 @@ public class MethodDepom {
     */
     public static Map<Integer, String> sorularMap() {
         List<Integer> soruNo=new ArrayList<>(Arrays.asList(31,32,33,34,35,36,37,38,39,40,41,42,43,44,45));
-        List<String> sorularList=new ArrayList<>(Arrays.asList(" String’ler ve StringBuilder’lar arasındaki farklar?"
-                ," Constructor’lar inherited edilebilir mi?"
-                ," ClassLoader nedir?"
-                ," Kaç tane ClassLoader vardır ve nelerdir?"
-                ," Java’da String’ler neden doğası gereği değişmezdir?"
-                ," Array ve ArrayList arasındaki farklar nelerdir?"
-                ," Java da Map nedir?"
-                ," Java da Collection Class nedir?"
-                ," Collection Class’lar neler içerirler açıklayınız?"
-                ," Polymorphism nedir?"
-                ," Kaç çeşit Polymorphism vardır?"
-                ," Java’da Abstraction (soyutlama) nedir?"
-                ," Java da Interface ne anlam ifade eder?"
-                ," Abstract Class ile Interface arasındaki farklar nelerdir (Bu soru olmazsa olmazlardan)?"
-                ," Java da Inheritance (kalıtım-miras) nedir?"));
+        List<String> sorularList=new ArrayList<>(Arrays.asList(
+                 " S31->String’ler ve StringBuilder’lar arasındaki farklar?"
+                ," S32->Constructor’lar inherited edilebilir mi?"
+                ," S33->ClassLoader nedir?"
+                ," S34->Kaç tane ClassLoader vardır ve nelerdir?"
+                ," S35->Java’da String’ler neden doğası gereği değişmezdir?"
+                ," S36->Array ve ArrayList arasındaki farklar nelerdir?"
+                ," S37->Java da Map nedir?"
+                ," S38->Java da Collection Class nedir?"
+                ," S39->Collection Class’lar neler içerirler açıklayınız?"
+                ," S40->Polymorphism nedir?"
+                ," S41->Kaç çeşit Polymorphism vardır?"
+                ," S42->Java’da Abstraction (soyutlama) nedir?"
+                ," S43->Java da Interface ne anlam ifade eder?"
+                ," S44->Abstract Class ile Interface arasındaki farklar nelerdir (Bu soru olmazsa olmazlardan)?"
+                ," S45->Java da Inheritance (kalıtım-miras) nedir?"));
         Map<Integer,String> sorularMap=new HashMap<>();
         for (int i = 0; i <soruNo.size() ; i++) {
             sorularMap.put(soruNo.get(i),sorularList.get(i));
@@ -70,22 +71,23 @@ public class MethodDepom {
 
     public static Map<String, String> soruYolla() {
         List<String> team3 = new ArrayList<>(Arrays.asList("Yücel Bey", "Mehmet Dag Bey", "Vahit Bey", "Duygu Günaydin Hanim", "Erman Bey", "F.Betül Alptekin Hanim",
-                "Hamza Cicek Bey", "Hüseyin Emre Bey", "Mehmet Meral Bey", "Tugce Bol Bey", "Yahya Bey", "Zehranur Avcibas Hanim", "Mehmet Erden", "Hakan Bey", "Muhammet Bey"));
-        List<String> sorularList=new ArrayList<>(Arrays.asList(" String’ler ve StringBuilder’lar arasındaki farklar?"
-                ," Constructor’lar inherited edilebilir mi?"
-                ," ClassLoader nedir?"
-                ," Kaç tane ClassLoader vardır ve nelerdir?"
-                ," Java’da String’ler neden doğası gereği değişmezdir?"
-                ," Array ve ArrayList arasındaki farklar nelerdir?"
-                ," Java da Map nedir?"
-                ," Java da Collection Class nedir?"
-                ," Collection Class’lar neler içerirler açıklayınız?"
-                ," Polymorphism nedir?"
-                ," Kaç çeşit Polymorphism vardır?"
-                ," Java’da Abstraction (soyutlama) nedir?"
-                ," Java da Interface ne anlam ifade eder?"
-                ," Abstract Class ile Interface arasındaki farklar nelerdir (Bu soru olmazsa olmazlardan)?"
-                ," Java da Inheritance (kalıtım-miras) nedir?"));
+                "Hamza Cicek Bey", "Hüseyin Emre Bey", "Mehmet Meral Bey", "Tugce Bol Hanim", "Yahya Bey", "Zehranur Avcibas Hanim", "Mehmet Erden", "Hakan Bey", "Muhammet Bey"));
+        List<String> sorularList=new ArrayList<>(Arrays.asList(
+                 "S31->String’ler ve StringBuilder’lar arasındaki farklar?"
+                ,"S32->Constructor’lar inherited edilebilir mi?"
+                ,"S33->ClassLoader nedir?"
+                ,"S34->Kaç tane ClassLoader vardır ve nelerdir?"
+                ,"S35->Java’da String’ler neden doğası gereği değişmezdir?"
+                ,"S36->Array ve ArrayList arasındaki farklar nelerdir?"
+                ,"S37->Java da Map nedir?"
+                ,"S38->Java da Collection Class nedir?"
+                ,"S39->Collection Class’lar neler içerirler açıklayınız?"
+                ,"S40->Polymorphism nedir?"
+                ,"S41->Kaç çeşit Polymorphism vardır?"
+                ,"S42->Java’da Abstraction (soyutlama) nedir?"
+                ,"S43->Java da Interface ne anlam ifade eder?"
+                ,"S44->Abstract Class ile Interface arasındaki farklar nelerdir (Bu soru olmazsa olmazlardan)?"
+                ,"S45->Java da Inheritance (kalıtım-miras) nedir?"));
         Map<String,String> eslestirme=new HashMap<>();
         for (int i = 0; i <team3.size() ; i++) {
 
