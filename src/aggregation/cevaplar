@@ -1,0 +1,113 @@
+S46: Java da alt class (child) nedir?
+A46: Özellikleri miras alan bir class, alt class olarak tanınır.
+
+S47: Inheritance çeşitleri nelerdir?
+C47: tek (single), çok düzeyli(multilevel), hiyerarşik (hierarchical) ve karma (hybrid)
+
+S48: Açıklayınız?
+C48: Single: Bir ebeveyn bir çocuk
+Multilevel: Daha fazla ebeveyn bir çocuk
+Hierarchical: Bir ebeveyn daha fazla alt sınıf
+Hybrid: İki veya daha fazla kalıtım türünün bir kombinasyonudur.
+/*
+  # 1) Tek Kalıtım: Türetilmiş bir sınıf veya alt sınıf yalnızca bir temel veya üst sınıftan miras aldığında, bu tek kalıtımdır.
+  # 2) Çok Düzeyli Kalıtım: Çok Seviyeli Devralmada, bir sınıfın bir temel sınıftan miras aldığı ve türetilmiş sınıfın da başka bir sınıf tarafından miras alındığı birden fazla seviyeye sahibiz.
+  # 3) Hiyerarşik Kalıtım: Bu tür kalıtımda, bir üst sınıf birden fazla sınıf tarafından miras alındığında bir miras hiyerarşisi oluşturulur.
+  # 4) Çoklu Kalıtım: Çoklu miras, bir sınıfın özellikleri ve davranışları birden fazla ebeveynden miras alabildiğidir.
+  # 5) Hibrit Kalıtım: Bir veya daha fazla kalıtım türü birleştirildiğinde, melez bir kalıtım haline gelir.
+*/
+S49: Java da method Overloading nedir?
+C49: Methodun davranışına daha fazlasını eklemek veya genişletmektir.
+Bu bir derleme zamanı (compile time) polimorfizmidir.
+Methodların farklı imzaları olmalıdır.
+Aynı Class’ta ki methodlar aynı adı paylaşır ancak her methodun farklı sayıda
+parametresi olmalıdır. Veya farklı tür ve sıraya sahip parametreler.
+Class’ta mirasa inheritance ihtiyaç duyabilir veya gerekmeyebilir.
+
+S50: Java da method Overridden nedir?
+A50: Methodun mevcut davranışını "değiştirmektir".
+Bu bir çalışma zamanı polimorfizmidir.
+Methods aynı imzaya sahip olmalıdır.
+Alt class, aynı ada sahip aynı methoda sahiptir.
+Tam olarak aynı sayıda ve türde parametreler ve süper class olarak aynı return type
+olmalıdır.
+
+S51: Özel ve statik methodu override edebilir misiniz?
+C51: Hayır yapmazsınız, önce class içinde inheritance yapmanız lazım. Buda
+imkânsız özel ve static olduğu için method.
+
+S52: Java multiple Inheritance i destekler mi?
+C52: Java bunu desteklemez. Çünkü derleyicinin compiler karar vermesi zor, hangi
+methodun çalıştırılacağını, aynı method adı var ise farklı ebeveyn sınıflarında. (52.
+soruda sunu kaçırmayalım burada ki multilevel demek bir den fazla parent class olayı yoksa Java hybrid ve
+hierarchical gibi çoklu Inheritance lari destekliyor) (Derste burada iki babalı ya da iki anneli bi çocuk olmaz demişti
+Süleyman Bey. C++ da bunu destekliyor ama Java’da desteklemiyor)
+
+A53: Java da Encapsulation (kapsülleme) nedir?
+C53: Veriler dış dünyadan gizlidir ve sadece mevcut class methodları aracılığıyla
+erişilebilir. Değişkenlerin değerlerini (value of the variables) değiştirmek ve
+görüntülemek için public method sağlanır.
+
+S54: Java da association nedir?
+C54: Tüm objelerin sahip olduğu bir ilişkidir. Kendi yaşam tarzları vardır ve sahipleri
+yok. Bu ilişkiler bire bir veya çok olabilir, çoktan bire ve çoklu ilişkilerde mevcuttur.
+
+S55: Java da aggregation ile neyi kastediyorsun?
+C55: Özel bir association biçimidir. Objelerin kendi yaşam döngüleri vardır, ancak
+burada bir sahiplik vardır ve alt obje başka bir ana objeye ait olamaz.
+
+S56: Java da composition nedir?
+A56: Yine özel bir aggregation biçimidir ve buna ölü bir ilişkisi diyebiliriz.
+
+S57: İşaretleyici Interface nedir?
+C57: Veri üyesi ve üye işlemi olmayan Interface i (marker) işaretleyici olarak
+tanımlarız.
+
+S58: Object klonlaması nedir?
+A58: Bu açık olarak bir objenin kopyasının yapılması prosedürüne denir. Fakat
+klonlanmış objenin methodu Protected olur, bu yüzden bu methodun override
+edilmesi gerekir.
+
+S59: Constructor Overloading (yapıcı aşırı yükleme) nedir?
+C59: Her biri farklı olan bir Class’a herhangi bir sayıda ekleme tekniğidir.
+
+S60: Java da Exception in nasıl üstesinden geliriz?
+C60: 5 tane keywords var. Try, catch, finally, throw ve throws ile.
+
+S61: Error ve Exception arasındaki fark nedir?
+C61: Hata (error): Çalışma zamanında ortaya çıkan düzeltilemez bir durumdur.
+İstisna (exception): Hatalı girdi nedeniyle ortaya çıkan durumdur veya insan
+hatası vb. Çoğu durumda kurtarmak mümkündür.
+
+S62: Checked ve unchecked exceptions arasındaki fark nedir?
+A62: Checked Exceptions: Derleme zamanında kontrol edilirler.
+Ör: IO istisnası SQL istisnası
+Unchecked Exceptions: Derleme sırasında kontrol edilmezler.
+Ör: aritmetik istisna, nullpointer istisnası. (bu soru interviewlerde çokça soruluyor dikkat edelim.)
+
+S63: Final, Finally ve finalize keywordlerin kullanım amaçları nelerdir?
+C63:
+Final: Class methodu ve değişken variable üzerinde kısıtlamalar uygulamak için
+kullanılır.
+Final class (miras) inheritance olamaz
+Final method geçersiz kılınamaz (override edilemez)
+Final variable değeri değiştirilemez
+Finally: Önemli kodu yerleştirmek için kullanılır, çalıştırılır.
+İstisnanın (exception) işlenip işlenmediği önemli değil.
+Finalize: Temizleme işleminin hemen öncesinde gerçekleştirilmesi için kullanılır
+Nesne çöp toplayıcı (garbage collector) çalışmasından önce.
+(önemli interview sorularindan)
+
+S64: throw ve throws arasındaki farklar nelerdir?
+C64:
+1. throw (fırlatma), açıkça bir istisna exception atmak için kullanılır
+throws (atar) ise, bir istisna exception bildirmek için kullanılır
+2. throw ardından bir örnek gelir
+throws ardından class gelir
+3. method içinde methodla beraber throw kullanılır
+throws, method un imzası içinde kullanılır
+4. throw ile birden fazla exception yapamayız,
+throws ile birden çok exception bildirebiliri
+
+S65: Java da exception hiyerarşik yapısı nasıldır?
+C65: Object<==throwable<==Exception[checked e,unchecked e] ,Error(virtualMachineError,AsertionError)
